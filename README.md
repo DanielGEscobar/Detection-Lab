@@ -37,12 +37,17 @@ Steps in the Project
 Objective: Build a lab environment to simulate real-world network traffic and security scenarios.
 Setup:
 Install a SIEM tool (e.g., Splunk or ELK) on a VM or local machine.
+![Screenshot 2024-11-29 075801](https://github.com/user-attachments/assets/524a5dd6-4263-4511-96a8-a34bd5efb06e)
+
 Set up VMs for log sources:
 Windows 10/Server for event logs.
+![Screenshot 2024-11-26 155738](https://github.com/user-attachments/assets/ea2708eb-eea3-4400-82c7-76efb0c10761)
+
 Linux server for syslog and application logs.
 pfSense for firewall logs.
 
-2. Configure Log Sources
+
+3. Configure Log Sources
 Windows Event Logs:
 Enable logging for user activity and security events.
 Install Splunk Universal Forwarder or Filebeat for log forwarding.
@@ -54,7 +59,7 @@ Set up a web server (e.g., Apache or Nginx) to generate access and error logs.
 Firewall Logs:
 Enable logging on pfSense and forward logs to the SIEM.
 
-3. Ingest Logs into the SIEM
+4. Ingest Logs into the SIEM
 Configure data ingestion pipelines in the SIEM:
 For Splunk:
 Define inputs for each log source.
@@ -63,7 +68,7 @@ For ELK:
 Use Logstash to parse and normalize log data.
 Store processed logs in Elasticsearch.
 
-4. Analyze the Logs
+5. Analyze the Logs
 Queries:
 Create searches to detect suspicious activities:
 Failed login attempts (Windows and Linux).
@@ -75,7 +80,7 @@ User login trends.
 Top IPs by traffic volume.
 Frequency of error codes from web servers.
 
-5. Simulate Security Incidents
+6. Simulate Security Incidents
 Brute-Force Attack:
 Use tools like Hydra to simulate brute-force login attempts on SSH or HTTP.
 Port Scanning:
@@ -85,7 +90,7 @@ Simulate uploads of malicious files to the web server.
 Data Exfiltration:
 Generate large volumes of outbound traffic.
 
-6. Detect and Respond to Incidents
+7. Detect and Respond to Incidents
 Write correlation rules:
 Example: Alert if >5 failed logins occur within 10 minutes.
 Configure alerts for:
@@ -93,7 +98,7 @@ Traffic spikes (potential DDoS attack).
 Access from blacklisted IPs.
 Changes in critical files or configurations.
 
-7. Document and Visualize
+8. Document and Visualize
 Architecture Diagram:
 Show the flow of logs from sources to the SIEM.
 Dashboards:
@@ -101,7 +106,7 @@ Include screenshots of visualizations for incident trends and KPIs.
 Incident Reports:
 Document simulated incidents, detection methods, and remediation steps.
 
-8. Deliverables
+9. Deliverables
 Portfolio Assets:
 A comprehensive report (PDF/Word):
 Overview of the environment and objectives.
