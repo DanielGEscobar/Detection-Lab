@@ -16,13 +16,13 @@ The Detection Lab project aimed to establish a controlled environment for simula
 
 
 - SIEM Platforms:
-Splunk (free tier) or ELK Stack (Elasticsearch, Logstash, Kibana).
--Log Forwarding Tools:
-Splunk Universal Forwarder, Filebeat.
+ELK Stack (Elasticsearch, Logstash, Kibana).
+-Log Forwarding Tool:
+ Filebeat.
 -Log Sources:
 Windows Event Logs, Linux Syslog, Apache/Nginx Logs, Firewall Logs.
 -Attack Simulation Tools:
-Metasploit, Nmap, Hydra, or Scapy.
+Metasploit, Nmap, Hydra.
 -Virtualization:
 VirtualBox or VMware to set up the test environment.
 -Network Traffic Tools:
