@@ -45,6 +45,7 @@ Windows 10/Server for event logs.
 
 Linux server for syslog and application logs.
 pfSense for firewall logs.
+![Screenshot 2024-11-29 080948](https://github.com/user-attachments/assets/f634ca67-b1ab-4735-ac4b-d1ca8fe6d430)
 
 
 3. Configure Log Sources
